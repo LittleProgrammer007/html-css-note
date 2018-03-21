@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+        /* 类名和ID的第一个字符不能使用数字，它无法在 Mozilla 或 Firefox 中起作用。 */
+        .1test{
+            color: green;
+        }
+
+        .test{
+            color: green;
+        }
+
+        #1test{
+            color: green;
+        }
+
+        #test{
+            color: green;
+        }
+        </style>
+    </head>
+    <body>
+        <p>类名和ID的第一个字符不能使用数字，它无法在 Mozilla 或 Firefox 中起作用。</p>
+      
+        <p class="1test">类名第一个字符使用数字，样式无法应用。</p>
+
+        <p class="test">类名第一个字符不使用数字，样式可应用。字为绿色。</p>
+
+        <p id="1test">ID第一个字符使用数字，样式无法应用。</p>
+        
+        <p id="test">ID第一个字符不使用数字，样式可应用。字为绿色。</p>
+    </body>
+</html>
